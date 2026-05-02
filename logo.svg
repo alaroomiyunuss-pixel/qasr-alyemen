@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Outer brown circle -->
+  <circle cx="200" cy="200" r="195" fill="#7a5c4a"/>
+  <!-- Red cross/star arms -->
+  <g fill="#c0392b">
+    <ellipse cx="200" cy="60" rx="38" ry="60"/>
+    <ellipse cx="200" cy="340" rx="38" ry="60"/>
+    <ellipse cx="60" cy="200" rx="60" ry="38"/>
+    <ellipse cx="340" cy="200" rx="60" ry="38"/>
+  </g>
+  <!-- Diagonal arms -->
+  <g fill="#c0392b">
+    <ellipse cx="115" cy="115" rx="35" ry="55" transform="rotate(-45 115 115)"/>
+    <ellipse cx="285" cy="115" rx="35" ry="55" transform="rotate(45 285 115)"/>
+    <ellipse cx="115" cy="285" rx="35" ry="55" transform="rotate(45 115 285)"/>
+    <ellipse cx="285" cy="285" rx="35" ry="55" transform="rotate(-45 285 285)"/>
+  </g>
+  <!-- Small brown circles at tips -->
+  <g fill="#5a3e30">
+    <circle cx="200" cy="28" r="14"/>
+    <circle cx="200" cy="372" r="14"/>
+    <circle cx="28" cy="200" r="14"/>
+    <circle cx="372" cy="200" r="14"/>
+    <circle cx="78" cy="78" r="10"/>
+    <circle cx="322" cy="78" r="10"/>
+    <circle cx="78" cy="322" r="10"/>
+    <circle cx="322" cy="322" r="10"/>
+  </g>
+  <!-- Inner brown circle -->
+  <circle cx="200" cy="200" r="120" fill="#7a5c4a"/>
+  <!-- White arcs -->
+  <g fill="#f5efe8" opacity="0.9">
+    <path d="M200 100 Q255 130 255 200 Q255 260 200 280 Q155 260 155 200 Q155 130 200 100Z" opacity="0.5"/>
+    <path d="M100 200 Q130 145 200 145 Q260 145 280 200 Q260 255 200 255 Q130 255 100 200Z" opacity="0.5"/>
+  </g>
+  <!-- Red flower petals -->
+  <g fill="#c0392b">
+    <ellipse cx="200" cy="152" rx="20" ry="36"/>
+    <ellipse cx="200" cy="248" rx="20" ry="36"/>
+    <ellipse cx="152" cy="200" rx="36" ry="20"/>
+    <ellipse cx="248" cy="200" rx="36" ry="20"/>
+    <ellipse cx="166" cy="166" rx="20" ry="36" transform="rotate(-45 166 166)"/>
+    <ellipse cx="234" cy="166" rx="20" ry="36" transform="rotate(45 234 166)"/>
+    <ellipse cx="166" cy="234" rx="20" ry="36" transform="rotate(45 166 234)"/>
+    <ellipse cx="234" cy="234" rx="20" ry="36" transform="rotate(-45 234 234)"/>
+  </g>
+  <!-- White inner petals -->
+  <g fill="#f5efe8">
+    <ellipse cx="200" cy="166" rx="12" ry="22"/>
+    <ellipse cx="200" cy="234" rx="12" ry="22"/>
+    <ellipse cx="166" cy="200" rx="22" ry="12"/>
+    <ellipse cx="234" cy="200" rx="22" ry="12"/>
+    <ellipse cx="178" cy="178" rx="12" ry="22" transform="rotate(-45 178 178)"/>
+    <ellipse cx="222" cy="178" rx="12" ry="22" transform="rotate(45 222 178)"/>
+    <ellipse cx="178" cy="222" rx="12" ry="22" transform="rotate(45 178 222)"/>
+    <ellipse cx="222" cy="222" rx="12" ry="22" transform="rotate(-45 222 222)"/>
+  </g>
+  <!-- Center circle -->
+  <circle cx="200" cy="200" r="22" fill="#7a5c4a"/>
+  <circle cx="200" cy="200" r="10" fill="#c0392b"/>
+</svg>

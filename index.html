@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>مطعم قصر اليمن | Yemen Palace – Den Haag</title>
+  <meta name="description" content="مطعم قصر اليمن في لاهاي، هولندا. أصيل الأطباق اليمنية – مندي، مضبي، سلتة. Wagenstraat 126A Den Haag."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- DELIVERY BAR -->
+<div class="delivery-bar" id="deliveryBar">
+  <div class="delivery-bar__inner container">
+    <span class="delivery-bar__label">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      توصيل سريع لباب بيتك
+    </span>
+    <div class="delivery-bar__btns">
+      <!-- Thuisbezorgd -->
+      <a href="https://www.thuisbezorgd.nl" target="_blank" rel="noopener" class="delivery-btn delivery-btn--tb" id="btnThuisbezorgd">
+        <svg class="delivery-btn__logo" viewBox="0 0 200 60" width="110" height="33">
+          <rect width="200" height="60" rx="8" fill="#FF6900"/>
+          <!-- House icon -->
+          <path d="M18 38V24l10-8 10 8v14H18z" fill="white" stroke="white" stroke-width="1"/>
+          <rect x="24" y="30" width="8" height="8" fill="#FF6900"/>
+          <!-- Text -->
+          <text x="44" y="26" font-family="Arial,sans-serif" font-weight="800" font-size="11" fill="white">Thuisbezorgd</text>
+          <text x="44" y="42" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.85)">Bestel hier</text>
+        </svg>
+      </a>
+      <!-- Uber Eats -->
+      <a href="https://www.ubereats.com" target="_blank" rel="noopener" class="delivery-btn delivery-btn--ue" id="btnUberEats">
+        <svg class="delivery-btn__logo" viewBox="0 0 200 60" width="110" height="33">
+          <rect width="200" height="60" rx="8" fill="#06C167"/>
+          <!-- Uber Eats U icon -->
+          <circle cx="22" cy="30" r="13" fill="white"/>
+          <path d="M16 24v8a6 6 0 0012 0v-8" stroke="#06C167" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <!-- Text -->
+          <text x="42" y="26" font-family="Arial,sans-serif" font-weight="800" font-size="13" fill="white">Uber Eats</text>
+          <text x="42" y="42" font-family="Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.85)">Order now</text>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<header class="header" id="header">
+  <nav class="nav container">
+    <a href="#hero" class="nav__logo">
+      <div class="nav__logo-emblem">
+        <svg viewBox="0 0 60 60" width="52" height="52"><circle cx="30" cy="30" r="28" fill="#7a5c4a"/><polygon points="30,8 36,24 54,24 40,34 46,52 30,42 14,52 20,34 6,24 24,24" fill="#c0392b"/><circle cx="30" cy="30" r="10" fill="#7a5c4a"/><circle cx="30" cy="30" r="5" fill="#d4a017"/></svg>
+      </div>
+      <span class="nav__logo-text">
+        <span class="nav__logo-ar">قصر اليمن</span>
+        <span class="nav__logo-en">Yemen Palace</span>
+      </span>
+    </a>
+    <ul class="nav__list" id="navList">
+      <li><a href="#hero"        class="nav__link active">الرئيسية</a></li>
+      <li><a href="#about"       class="nav__link">من نحن</a></li>
+      <li><a href="#menu"        class="nav__link">القائمة</a></li>
+      <li><a href="#gallery"     class="nav__link">الصور</a></li>
+      <li><a href="#hours"       class="nav__link">أوقات العمل</a></li>
+      <li><a href="#contact"     class="nav__link">تواصل</a></li>
+    </ul>
+    <a href="#reservation" class="btn btn--primary nav__btn">احجز طاولة</a>
+    <button class="nav__toggle" id="navToggle" aria-label="toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero__bg">
+    <img src="img_mandi.jpg" alt="مندي قصر اليمن" class="hero__bg-img"/>
+    <div class="hero__overlay"></div>
+  </div>
+  <div class="pattern-bar pattern-bar--top"></div>
+  <div class="hero__content container">
+    <p class="hero__tagline">Den Haag · Nederland</p>
+    <h1 class="hero__title">مرحباً بك في<br/><span>قصر اليمن</span></h1>
+    <p class="hero__sub">Yemen Palace Restaurant</p>
+    <p class="hero__desc">استمتع بأصيل الطعم اليمني في قلب لاهاي. أطباق مُعدّة بأجود المكونات ووصفات موروثة بأسلوب عصري أنيق.</p>
+    <div class="hero__actions">
+      <a href="#menu"        class="btn btn--primary btn--lg">استكشف القائمة</a>
+      <a href="#reservation" class="btn btn--outline btn--lg">احجز طاولة</a>
+    </div>
+    <div class="hero__stats">
+      <div class="hero__stat"><span class="hero__stat-num">١٢٦A</span><span class="hero__stat-label">Wagenstraat</span></div>
+      <div class="hero__stat-div"></div>
+      <div class="hero__stat"><span class="hero__stat-num">١٢–١١</span><span class="hero__stat-label">أوقات العمل</span></div>
+      <div class="hero__stat-div"></div>
+      <div class="hero__stat"><span class="hero__stat-num">٧</span><span class="hero__stat-label">أيام في الأسبوع</span></div>
+    </div>
+  </div>
+  <div class="pattern-bar pattern-bar--bottom"></div>
+</section>
+
+<!-- ABOUT -->
+<section class="about section" id="about">
+  <div class="container about__grid">
+    <div class="about__imgs">
+      <img src="img_interior.jpg" alt="داخل مطعم قصر اليمن" class="about__img"/>
+      <div class="about__badge">
+        <div class="about__badge-star">★</div>
+        <span>قصر اليمن</span>
+        <small>Den Haag</small>
+      </div>
+    </div>
+    <div class="about__content">
+      <p class="section__tag">من نحن</p>
+      <h2 class="section__title">تجربة يمنية أصيلة<br/>في قلب هولندا</h2>
+      <div class="pattern-line"></div>
+      <p class="about__text">مطعم قصر اليمن وجهتك الأولى للطعام اليمني الأصيل في لاهاي. نقدم لك أشهى الأطباق اليمنية المعدّة بعناية فائقة واختيار مكونات طازجة يومياً.</p>
+      <p class="about__text">من المندي والمضبي إلى السلتة والحلويات الشرقية — كل طبق يحكي قصة أصالة وشغف بفن الطهي اليمني.</p>
+      <div class="about__features">
+        <div class="about__feature"><span>🥩</span><div><h4>مندي &amp; مضبي</h4><p>مطهو على الفحم</p></div></div>
+        <div class="about__feature"><span>🌿</span><div><h4>مكونات طازجة</h4><p>اختيار يومي</p></div></div>
+        <div class="about__feature"><span>🕌</span><div><h4>حلال ١٠٠٪</h4><p>مضمون ومعتمد</p></div></div>
+        <div class="about__feature"><span>📍</span><div><h4>Den Haag</h4><p>Wagenstraat 126A</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="full-pattern"></div>
+
+<!-- MENU -->
+<section class="menu section" id="menu">
+  <div class="container">
+    <div class="section__header">
+      <p class="section__tag">قائمتنا</p>
+      <h2 class="section__title">أشهى الأطباق</h2>
+      <p class="section__subtitle">وصفات يمنية أصيلة بلمسة عصرية</p>
+    </div>
+    <div class="menu__tabs">
+      <button class="menu__tab active" data-cat="all">الكل</button>
+      <button class="menu__tab" data-cat="main">أطباق رئيسية</button>
+      <button class="menu__tab" data-cat="grills">مشويات</button>
+      <button class="menu__tab" data-cat="soups">شوربات</button>
+      <button class="menu__tab" data-cat="desserts">حلويات</button>
+      <button class="menu__tab" data-cat="drinks">مشروبات</button>
+    </div>
+    <div class="menu__grid" id="menuGrid">
+
+      <div class="menu-card" data-cat="main">
+        <div class="menu-card__img-wrap">
+          <img src="img_mandi.jpg" alt="مندي لحم" class="menu-card__img"/>
+          <span class="menu-card__badge">الأكثر طلباً</span>
+        </div>
+        <div class="menu-card__body">
+          <div class="menu-card__top"><h3 class="menu-card__name">مندي لحم</h3><span class="menu-card__price">€ 22</span></div>
+          <p class="menu-card__desc">لحم طري مطهو ببطء في التنور مع أرز مُعطّر بالزعفران والتوابل اليمنية</p>
+          <div class="menu-card__footer"><span class="menu-card__stars">★★★★★</span><button class="btn btn--sm btn--primary">اطلب الآن</button></div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="grills">
+        <div class="menu-card__img-wrap">
+          <img src="img_fish_spread.jpg" alt="مضبي سمك" class="menu-card__img"/>
+          <span class="menu-card__badge menu-card__badge--gold">مميز</span>
+        </div>
+        <div class="menu-card__body">
+          <div class="menu-card__top"><h3 class="menu-card__name">مضبي سمك</h3><span class="menu-card__price">€ 18</span></div>
+          <p class="menu-card__desc">سمك طازج مشوي على الطريقة اليمنية مع الأرز والصلصات التقليدية</p>
+          <div class="menu-card__footer"><span class="menu-card__stars">★★★★★</span><button class="btn btn--sm btn--primary">اطلب الآن</button></div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="main">
+        <div class="menu-card__img-wrap">
+          <img src="img_menu_spread.jpg" alt="طقم قصر اليمن" class="menu-card__img"/>
+          <span class="menu-card__badge menu-card__badge--gold">عرض خاص</span>
+        </div>
+        <div class="menu-card__body">
+          <div class="menu-card__top"><h3 class="menu-card__name">طقم قصر اليمن</h3><span class="menu-card__price">€ 45</span></div>
+          <p class="menu-card__desc">تشكيلة متكاملة من أطباق قصر اليمن تكفي ٣-٤ أشخاص مع الخبز والصلصات</p>
+          <div class="menu-card__footer"><span class="menu-card__stars">★★★★★</span><button class="btn btn--sm btn--primary">اطلب الآن</button></div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="desserts">
+        <div class="menu-card__img-wrap">
+          <img src="img_dessert.jpg" alt="حلوى قصر اليمن" class="menu-card__img"/>
+          <span class="menu-card__badge menu-card__badge--new">جديد</span>
+        </div>
+        <div class="menu-card__body">
+          <div class="menu-card__top"><h3 class="menu-card__name">كنافة شوكولاتة</h3><span class="menu-card__price">€ 8</span></div>
+          <p class="menu-card__desc">كنافة بالشوكولاتة والفراولة والفستق، تُقدم مع كوب شاي يمني أصيل</p>
+          <div class="menu-card__footer"><span class="menu-card__stars">★★★★★</span><button class="btn btn--sm btn--primary">اطلب الآن</button></div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="soups">
+        <div class="menu-card__img-wrap">
+          <div class="menu-card__placeholder">🍲</div>
+        </div>
+        <div class="menu-card__body">
+          <div class="menu-card__top"><h3 class="menu-card__name">سلتة يمنية</h3><span class="menu-card__price">€ 12</span></div>
+          <p class="menu-card__desc">الطبق الوطني اليمني بمرق اللحم الغني مع الحُلبة الخضراء وخبز التنور</p>
+          <div class="menu-card__footer"><span class="menu-card__stars">★★★★★</span><button class="btn btn--sm btn--primary">اطلب الآن</button></div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="drinks">
+        <div class="menu-card__img-wrap">
+          <div class="menu-card__placeholder">☕</div>
+        </div>
+        <div class="menu-card__body">
+          <div class="menu-card__top"><h3 class="menu-card__name">قهوة يمنية (قشر)</h3><span class="menu-card__price">€ 4</span></div>
+          <p class="menu-card__desc">القشر اليمني الأصيل المُعطّر بالزنجبيل والهيل والقرنفل</p>
+          <div class="menu-card__footer"><span class="menu-card__stars">★★★★★</span><button class="btn btn--sm btn--primary">اطلب الآن</button></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="full-pattern"></div>
+
+<!-- GALLERY -->
+<section class="gallery section" id="gallery">
+  <div class="container">
+    <div class="section__header">
+      <p class="section__tag">معرض الصور</p>
+      <h2 class="section__title">من مطبخنا إلى مائدتك</h2>
+    </div>
+    <div class="gallery__grid">
+      <div class="gallery__item gallery__item--tall">
+        <img src="img_mandi.jpg" alt="مندي"/>
+        <div class="gallery__overlay"><span>المندي اليمني</span></div>
+      </div>
+      <div class="gallery__item">
+        <img src="img_dessert.jpg" alt="حلوى"/>
+        <div class="gallery__overlay"><span>كنافة شوكولاتة</span></div>
+      </div>
+      <div class="gallery__item">
+        <img src="img_interior.jpg" alt="داخل المطعم"/>
+        <div class="gallery__overlay"><span>أجواء المطعم</span></div>
+      </div>
+      <div class="gallery__item gallery__item--wide">
+        <img src="img_fish_spread.jpg" alt="مضبي سمك"/>
+        <div class="gallery__overlay"><span>مضبي السمك</span></div>
+      </div>
+      <div class="gallery__item gallery__item--wide">
+        <img src="img_menu_spread.jpg" alt="طقم قصر اليمن"/>
+        <div class="gallery__overlay"><span>طقم قصر اليمن</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOURS -->
+<section class="hours section" id="hours">
+  <div class="full-pattern full-pattern--dark"></div>
+  <div class="container">
+    <div class="section__header">
+      <p class="section__tag">أوقات العمل</p>
+      <h2 class="section__title">نفتح أبوابنا كل يوم</h2>
+    </div>
+    <div class="hours__grid">
+      <div class="hours__card">
+        <div class="hours__day-list">
+          <div class="hours__row"><span class="hours__day">السبت</span><span class="hours__badge open">مفتوح</span><span class="hours__time">12:00 – 23:00</span></div>
+          <div class="hours__row"><span class="hours__day">الأحد</span><span class="hours__badge open">مفتوح</span><span class="hours__time">12:00 – 23:00</span></div>
+          <div class="hours__row"><span class="hours__day">الاثنين</span><span class="hours__badge open">مفتوح</span><span class="hours__time">12:00 – 23:00</span></div>
+          <div class="hours__row"><span class="hours__day">الثلاثاء</span><span class="hours__badge open">مفتوح</span><span class="hours__time">12:00 – 23:00</span></div>
+          <div class="hours__row"><span class="hours__day">الأربعاء</span><span class="hours__badge open">مفتوح</span><span class="hours__time">12:00 – 23:00</span></div>
+          <div class="hours__row"><span class="hours__day">الخميس</span><span class="hours__badge open">مفتوح</span><span class="hours__time">12:00 – 23:00</span></div>
+          <div class="hours__row hours__row--highlight"><span class="hours__day">الجمعة</span><span class="hours__badge open">مفتوح</span><span class="hours__time">12:00 – 23:00</span></div>
+        </div>
+      </div>
+      <div class="hours__info">
+        <div class="hours__info-card">
+          <div class="hours__info-icon">📍</div>
+          <h3>العنوان</h3>
+          <p>Wagenstraat 126A<br/>2512 BA Den Haag<br/>Nederland</p>
+          <a href="https://maps.google.com/?q=Wagenstraat+126A+Den+Haag" target="_blank" class="btn btn--primary" style="margin-top:16px">افتح في الخريطة</a>
+        </div>
+        <div class="hours__info-card">
+          <div class="hours__info-icon">📞</div>
+          <h3>للحجز والاستفسار</h3>
+          <p>06 20200007</p>
+          <a href="tel:0620200007" class="btn btn--primary" style="margin-top:16px">اتصل الآن</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials section">
+  <div class="container">
+    <div class="section__header">
+      <p class="section__tag">آراء زبائننا</p>
+      <h2 class="section__title">ماذا يقولون عنّا؟</h2>
+    </div>
+    <div class="testimonials__grid">
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p class="testimonial-card__text">"أفضل مطعم يمني في هولندا! المندي خيالي والخدمة ممتازة. حتماً سأعود مراراً."</p>
+        <div class="testimonial-card__author"><div class="testimonial-card__avatar">ع</div><div><strong>عبدالله الحارثي</strong><span>Den Haag</span></div></div>
+      </div>
+      <div class="testimonial-card testimonial-card--featured">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p class="testimonial-card__text">"تجربة استثنائية في قصر اليمن! كنافة الشوكولاتة لا توصف والمكان أنيق جداً. أنصح به بشدة."</p>
+        <div class="testimonial-card__author"><div class="testimonial-card__avatar">س</div><div><strong>سالم المحمدي</strong><span>Rotterdam</span></div></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p class="testimonial-card__text">"طقم قصر اليمن كان رائعاً! الأسرة كلها أحبّت الطعام. مطعم يستحق الزيارة."</p>
+        <div class="testimonial-card__author"><div class="testimonial-card__avatar">م</div><div><strong>محمد الزيدي</strong><span>Amsterdam</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="full-pattern"></div>
+
+<!-- RESERVATION -->
+<section class="reservation section" id="reservation">
+  <div class="container reservation__grid">
+    <div class="reservation__content">
+      <p class="section__tag">احجز الآن</p>
+      <h2 class="section__title">احجز طاولتك<br/>في قصر اليمن</h2>
+      <div class="pattern-line"></div>
+      <p class="reservation__text">احجز طاولتك مسبقاً واستمتع بتجربة طعام يمنية أصيلة في أجواء دافئة وأنيقة في قلب لاهاي.</p>
+      <div class="reservation__info">
+        <div class="reservation__info-item"><span>📍</span><div><strong>العنوان</strong><span>Wagenstraat 126A, 2512 BA Den Haag</span></div></div>
+        <div class="reservation__info-item"><span>📞</span><div><strong>للحجز</strong><a href="tel:0620200007" style="color:inherit">06 20200007</a></div></div>
+        <div class="reservation__info-item"><span>⏰</span><div><strong>أوقات العمل</strong><span>يومياً ١٢:٠٠ – ٢٣:٠٠</span></div></div>
+      </div>
+    </div>
+    <form class="reservation__form" id="reservationForm">
+      <div class="form__group"><label for="name">الاسم الكامل</label><input type="text" id="name" placeholder="أدخل اسمك" required/></div>
+      <div class="form__group"><label for="phone">رقم الهاتف</label><input type="tel" id="phone" placeholder="06 XXXXXXXX" required/></div>
+      <div class="form__row">
+        <div class="form__group"><label for="date">التاريخ</label><input type="date" id="date" required/></div>
+        <div class="form__group"><label for="time">الوقت</label><input type="time" id="time" required/></div>
+      </div>
+      <div class="form__group">
+        <label for="guests">عدد الأشخاص</label>
+        <select id="guests" required>
+          <option value="">اختر...</option>
+          <option>١–٢</option><option>٣–٤</option><option>٥–٦</option><option>٧+</option>
+        </select>
+      </div>
+      <div class="form__group"><label for="notes">ملاحظات</label><textarea id="notes" rows="3" placeholder="أي طلبات خاصة..."></textarea></div>
+      <button type="submit" class="btn btn--primary btn--full">تأكيد الحجز</button>
+    </form>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact section" id="contact">
+  <div class="container">
+    <div class="section__header">
+      <p class="section__tag">تواصل معنا</p>
+      <h2 class="section__title">نحن هنا لخدمتكم</h2>
+    </div>
+    <div class="contact__grid">
+      <div class="contact__card">
+        <div class="contact__icon">📍</div>
+        <h3>موقعنا</h3>
+        <p>Wagenstraat 126A<br/>2512 BA Den Haag</p>
+      </div>
+      <div class="contact__card">
+        <div class="contact__icon">📞</div>
+        <h3>اتصل بنا</h3>
+        <p><a href="tel:0620200007">06 20200007</a></p>
+      </div>
+      <div class="contact__card">
+        <div class="contact__icon">🗺️</div>
+        <h3>الخريطة</h3>
+        <a href="https://maps.google.com/?q=Wagenstraat+126A+Den+Haag" target="_blank" class="btn btn--primary" style="margin-top:12px;font-size:.85rem">افتح في Google Maps</a>
+      </div>
+      <div class="contact__card">
+        <div class="contact__icon">⏰</div>
+        <h3>أوقات العمل</h3>
+        <p>يومياً ١٢:٠٠ – ٢٣:٠٠</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="full-pattern full-pattern--footer"></div>
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <div class="footer__logo-wrap">
+        <svg viewBox="0 0 60 60" width="54" height="54"><circle cx="30" cy="30" r="28" fill="#7a5c4a"/><polygon points="30,8 36,24 54,24 40,34 46,52 30,42 14,52 20,34 6,24 24,24" fill="#c0392b"/><circle cx="30" cy="30" r="10" fill="#7a5c4a"/><circle cx="30" cy="30" r="5" fill="#d4a017"/></svg>
+      </div>
+      <p class="footer__name">مطعم قصر اليمن</p>
+      <p class="footer__name-en">Yemen Palace Restaurant</p>
+      <p class="footer__desc">أصيل الطعم اليمني في قلب لاهاي، هولندا.</p>
+    </div>
+    <div class="footer__links">
+      <h4>روابط سريعة</h4>
+      <ul>
+        <li><a href="#hero">الرئيسية</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#menu">القائمة</a></li>
+        <li><a href="#hours">أوقات العمل</a></li>
+        <li><a href="#contact">تواصل</a></li>
+      </ul>
+    </div>
+    <div class="footer__links">
+      <h4>أطباقنا</h4>
+      <ul>
+        <li><a href="#menu">مندي لحم</a></li>
+        <li><a href="#menu">مضبي سمك</a></li>
+        <li><a href="#menu">سلتة يمنية</a></li>
+        <li><a href="#menu">كنافة شوكولاتة</a></li>
+        <li><a href="#menu">قهوة يمنية</a></li>
+      </ul>
+    </div>
+    <div class="footer__contact">
+      <h4>معلومات التواصل</h4>
+      <p>📍 Wagenstraat 126A<br/>2512 BA Den Haag</p>
+      <p>📞 <a href="tel:0620200007">06 20200007</a></p>
+      <p>⏰ يومياً ١٢:٠٠ – ٢٣:٠٠</p>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>© 2024 مطعم قصر اليمن · Yemen Palace Restaurant · Den Haag</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
